@@ -1,0 +1,838 @@
+* {
+    font-family: "Rubik", serif;
+}
+
+body {
+    max-width: 1440px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+} 
+
+nav img {
+    width: 10%;
+    height: 2%;
+}
+nav .hamburger {
+    display: none;
+}
+
+nav .close   {
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+
+}
+
+nav ul li {
+    padding-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(145,148,161);
+
+}
+
+
+nav ul li a button {
+    background-color: rgb(250, 87, 87);
+    text-transform: uppercase;
+    color: white;
+    padding: 5px 20px;
+    border: none;
+    position: relative;
+    bottom: 5px;
+
+}
+
+.platform {
+    display: grid;
+    grid-template-areas: 'h1 img'
+                          'p img'
+                          'btn img';
+    padding-right: 10%;
+    padding-left: 15%;
+                         
+}
+
+.platform h1 {
+    grid-area: h1;
+    font-size: 32px;
+}
+
+.platform p {
+    grid-area: p;
+    font-size: 18px;
+    width: 520px;
+}
+
+.platform .flex-btn {
+    grid-area: btn;
+}
+
+.platform .blue {
+    grid-area: blue;
+    padding: 5px 20px;
+    border: none;
+    background-color: rgb(83,104,223);
+    color: aliceblue;
+}
+
+.platform .white {
+    grid-area: white;
+    padding: 5px 20px;
+    border: none;
+    margin-left: 5px;
+}
+
+.platform img {
+    grid-area: img;
+    width: 90%;
+}
+
+.features {
+    padding: 2% 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.features h2 {
+    text-align: center;
+}
+
+.features p {
+    width: 450px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 2%;
+    color: rgb(145,148,161);
+}
+
+
+.features ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+}
+
+.features ul li {
+    padding-left: 3%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    border-bottom: 1px solid rgb(145,148,161);
+    
+}
+
+.features ul li a {
+    text-decoration: none;
+    color: rgb(145,148,161);      
+    
+}
+
+
+.features ul li:hover {
+    border-bottom: 5px solid red;
+    width: 30%;
+    
+} 
+
+
+.click {
+    display: grid;
+    grid-template-areas: 'imag title'
+                         'imag text'
+                         'imag info';
+    padding-right: 10%;
+    padding-left: 15%;
+}
+
+.click img {
+    grid-area: imag;
+    
+}
+
+.click h2 {
+    grid-area: title;
+    padding-left: 13%;
+    padding-top: 15%;
+}
+
+.click p {
+    grid-area: text;
+    padding-left: 13%;
+    color: rgb(145,148,161);
+    position: relative;
+    bottom: 0px;
+    
+}
+
+.click button {
+    grid-area: info;
+    width: 30%;
+    margin-left: 13%;
+    position: relative;
+    bottom: 20px;
+    color: white;
+    background-color: rgb(83,104,223);
+    border-radius: 5px;
+    border: none;
+}
+
+
+.extension {
+    padding: 10%;
+    text-align: center;
+}
+
+.extension p {
+    color: rgb(145,148,161);
+    width: 45%;
+    padding-top: 2%;
+    position: relative;
+    left: 27%;
+}
+
+
+main {
+    display: flex;
+    padding-right: 10%;
+    padding-left: 15%;
+}
+
+.chrome {
+    border: 1px solid rgb(145,148,161);
+    padding: 4%;
+    width: 30%;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    bottom: 70px;
+}
+
+
+.chrome h3 {
+    padding-top: 30px;
+    font-size: 21px;
+}
+
+.chrome p {
+    color: rgb(145,148,161);
+}
+
+.chrome .add {
+    color: white;
+    background-color: rgb(83,104,223);
+    padding: 5%;
+    
+    
+}
+
+.firefox {
+    border: 1px solid rgb(145,148,161);
+    padding: 4%;
+    width: 30%;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    left: 10px;
+}
+
+.firefox h3 {
+    padding-top: 30px;
+    font-size: 21px;
+}
+
+.firefox p {
+    color: rgb(145,148,161);
+}
+
+.firefox .add {
+    color: white;
+    background-color: rgb(83,104,223);
+    padding: 5%;
+    
+    
+}
+
+
+.opera {
+    border: 1px solid rgb(145,148,161);
+    padding: 4%;
+    width: 30%;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    left: 20px;
+    top: 70px;
+}
+
+.opera h3 {
+    padding-top: 30px;
+    font-size: 21px;
+}
+
+.opera p {
+    color: rgb(145,148,161);
+}
+
+.opera .add {
+    color: white;
+    background-color: rgb(83,104,223);
+    padding: 5%;
+    
+    
+}
+
+
+.questions {
+    padding: 10%;
+    text-align: center;
+}
+
+.questions p {
+    color: rgb(145,148,161);
+    width: 45%;
+    padding-top: 2%;
+    position: relative;
+    left: 27%;
+}
+
+.accordion {
+    padding-right: 10%;
+    padding-left: 15%;
+    position: relative;
+    bottom: 70px;
+    left: 13%;
+    width: 70%;
+    
+}
+
+.info-plus {
+    position: relative;
+    left: 47%;
+    color: white;
+    background-color: rgb(83,104,223);
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+
+}
+
+.contact {
+    color: white;
+    background-color: rgb(83,104,223);
+    margin-top: 50px;
+    text-align: center;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+}
+
+.contact span {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+
+.contact h2 {
+    font-size: 28px;
+    width: 40%;
+    position: relative;
+    left: 30%;
+    top: 30px;
+}
+
+.contact input {
+    position: relative;
+    top: 40px;
+    width: 25%;
+    padding: .7% 5%;
+    right: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact input::placeholder {
+    color: rgb(145,148,161);
+    
+}
+
+.contact .red {
+    position: relative;
+    top: 40px;
+    padding: .7% .8%;
+    color: white;
+    background-color: rgb(250, 87, 87);
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+    background-color: rgb(145,148,161);
+    
+}
+
+footer img {
+    width: 10%;
+    height: 2%;
+    
+    
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    position: relative;
+    right: 120px;
+
+}
+
+footer ul li {
+    padding-left: 40px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: hsl(229, 31%, 21%);
+    font-size: 13px;
+
+}
+
+footer .fb {
+    width: 1.5%;
+    position: relative;
+    left: 30px;
+    
+}
+
+footer .twitter {
+    width: 1.5%;
+    position: relative;
+    right: 140px;
+    top: 2px;
+    
+}
+
+
+@media screen and (max-width: 668px) {
+
+    body {
+        z-index: 0;
+    }
+    nav {
+        display: flex;
+        justify-content: space-around;
+        padding: 5%;
+    } 
+    
+    nav img {
+        width: 30%;
+        height: 5%;
+        margin-left: 30px;
+    }
+
+    nav .hamburger {
+        display: inline-flex;
+        width: 5%;
+    }
+
+    nav .close {
+        width: 4%;
+        display: none;
+        background-color: blue;
+
+    }
+    
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 10%;
+        width: 100%;
+        z-index: 1;
+        
+       
+        
+        
+
+    }
+
+    nav ul li:first-child {
+        border-top: 1px solid white;
+        padding-top: 10px;
+    }
+
+    nav ul li:last-child {
+        border-bottom: none;
+        padding-top: 10px;
+    }
+    
+    nav ul li {
+        position: relative;
+        left: 150px;
+        padding-top: 20px;
+        border-bottom: 1px solid white;
+        width: 200px;
+        text-align: center;
+        padding-bottom: 10px;
+       
+        
+       
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        
+        
+    
+    }
+    
+    
+    nav ul li a button {
+        background-color: hsl(229, 31%, 21%);
+        text-transform: uppercase;
+        color: white;
+        padding: 5px 20px;
+        border: 1px solid white;
+        width: 300px;
+        position: relative;
+        top:5px;
+        bottom: 5px;
+        right: 60px;
+        
+    
+    }
+
+    nav ul li a button:hover {
+        color: rgb(83, 104, 223);
+    }
+
+    .platform {
+        display: grid;
+        grid-template-areas: 'img'
+                              'h1'
+                              'p'
+                              'btn';
+       
+        padding-left: 12%;
+                             
+    }
+    
+    .platform h1 {
+        grid-area: h1;
+        width: 350px;
+        text-align: center;
+        margin-left: 85px;
+    }
+    
+    .platform p {
+        grid-area: p;
+        font-size: 18px;
+        width: 350px;
+        text-align: center;
+        margin-left: 80px;
+        margin-top: 20px;
+    }
+    
+    .platform .flex-btn {
+        grid-area: btn;
+        margin-left: 80px;
+        margin-top: 20x;
+    }
+    
+    .platform .blue {
+        grid-area: blue;
+        padding: 10px 20px;
+    }
+    
+    .platform .white {
+        grid-area: white;
+        padding: 10px 20px;
+        
+    }
+    
+    .platform img {
+        grid-area: img;
+        width: 90%;
+        margin-left: 7%;
+    }
+
+    .features {
+        padding: 2% 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20px;
+        margin-right: 0;
+        text-align: center;
+    }
+    
+    .features h2 {
+        text-align: center;
+    }
+    
+    .features p {
+        width: 450px;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 2%;
+        color: rgb(145,148,161);
+    }
+    
+    
+    .features ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    
+    .features ul li {
+        text-align: center;
+        border-bottom: 1px solid rgb(145,148,161);
+        
+    }
+    
+    
+    .features ul li:hover {
+        
+        width: 100%;
+        
+    }
+
+    .click {
+        display: grid;
+        grid-template-areas: 'imag' 
+                             'title'
+                             'text'
+                             'info';
+        padding-right: 15%;
+        padding-left: 12%;
+    }
+    
+    .click img {
+        grid-area: imag;
+        
+    }
+    
+    .click h2 {
+        grid-area: title;
+        text-align: center;
+        padding-left: 0;
+        
+    }
+    
+    .click p {
+        grid-area: text;
+        padding-left: 0%;
+        position: relative;
+        bottom: 0px;
+        text-align: center;
+        
+    }
+
+    .click button{
+        grid-area: info;
+        width: 30%;
+        margin-left: 0%;
+        position: relative;
+        left: 35%;
+        bottom: 0px;
+        color: white;
+        background-color: rgb(83,104,223);
+        border-radius: 5px;
+        border: none;
+    
+    }
+
+    .extension {
+        padding: 10%;
+        text-align: center;
+    }
+    
+    .extension p {
+        color: rgb(145,148,161);
+        width: 70%;
+        padding-top: 2%;
+        position: relative;
+        left: 15%;
+    }
+    
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        padding-right: 0%;
+        padding-left: 15%;
+    }
+    
+    .chrome {
+        width: 60%;
+        border-radius: 5px;
+        position: relative;
+        bottom: 60px;
+        left: 50px;
+
+    }
+    
+    
+    
+    .firefox {
+        width: 60%;
+        position: relative;
+        left: 50px;
+    }
+    
+
+    
+    
+    .opera {
+
+        width: 60%;
+        position: relative;
+        left: 50px;
+        top: 60px;
+    }
+
+    .questions {
+        padding: 20%;
+        text-align: center;
+        
+    }
+
+    .questions h2 {
+        width: 350px;
+    }
+    
+    .questions p {
+        width: 90%;
+        position: relative;
+        left: 0%;
+    }
+    
+    .accordion {
+        padding-left: 10%;
+        position: relative;
+        left: 0%;
+        width: 100%;
+        
+    }
+    
+    .info-plus {
+        position: relative;
+        left: 40%;
+        
+   
+    
+    }
+   
+    
+
+    .contact {
+        
+        display: flex;
+        flex-direction: column;
+       
+    }
+    
+    
+    .contact h2 {
+        width: 70%;
+        position: relative;
+        left: 12%;
+        top: 30px;
+    }
+    
+    .contact input {
+        position: relative;
+        left: 15%;
+        top: 40px;
+        width: 70%;
+        right: 0px;
+        
+    }
+    
+ 
+    
+    .contact .red {
+        position: relative;
+        top: 50px;
+        padding: .7% .8%;
+        width: 70%;
+        left: 15%;
+        
+    
+    }
+    
+    footer {
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+        background-color: rgb(145,148,161);
+        
+    }
+    
+    footer img {
+        width: 20%;
+        margin-left: 210px;
+        
+        
+        
+    }
+    
+    footer ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        right: 0px;
+        left: 30%;
+        top: 10px;
+    
+    }
+    
+    footer ul li {
+        padding-top: 20px;
+    }
+    
+  
+    
+    footer .fb {
+        width: 3%;
+        position: relative;
+        left: 0px;
+        top: 15px;
+        left: 20px;
+        
+    }
+    
+    footer .twitter {
+        width: 3%;
+        position: relative;
+        right: 0px;
+        top: 0px;
+        left: 15%;
+        
+    }
+
+
+}
